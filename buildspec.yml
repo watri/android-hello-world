@@ -9,12 +9,11 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on 'date'
       - ./gradlew build
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on 'date'
 artifacts:
   files:
-    - '**/*'
-    name: concurrencysample-$(date +%Y-%m-%d)
+    - app/build/outputs/apk/debug/*.apk
