@@ -16,5 +16,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - '**/*.apk'
-    discard-paths: no
+    - '**/*'
+    name: concurrencysample-$(date +%Y-%m-%d)
